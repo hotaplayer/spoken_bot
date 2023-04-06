@@ -4,19 +4,21 @@ import kafka_service
 import whisper
 import numpy
 import redis_service
-
+import binascii
 model = whisper.load_model("medium")
 
 if __name__ == '__main__':
     while True:
         # 读取任务
-        fid = kafka_service.read_new_audio_fid()
+        msg = kafka_service.read_new_audio_fid_msg()
+        fid = msg.value()
         # 从redis里提取音频原文
         audio = redis_service.get(fid)
-        audio_blob = audio['blob']
+        audio_blob = binascii.unhexlify(audio['blob'])
         # 选择model进行训练
-
         result = model.transcribe(numpy.frombuffer(audio_blob, dtype=numpy.uint8))
-        req_text = result["text"]
+        prompt = result["text"]
         # 插入到数据库中
-        redis_service.updateReqText(fid, req_text)
+        redis_service.prompt(fid, prompt)
+        # 通知chat_processor去生成文本
+        kafka_service.pub_prompt(fid, prompt)

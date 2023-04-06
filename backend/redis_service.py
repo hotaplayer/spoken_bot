@@ -11,7 +11,7 @@ def save(audio_blob)->str:
     fid = id_service.next_id()
     audio_data = {
         "blob": binascii.hexlify(audio_blob).decode(),
-        "req_text" : "",
+        "prompt" : "",
         "resp_text": ""
     }
     r.hmset(fid, audio_data)
@@ -26,5 +26,8 @@ def get(fid)->dict:
     else:
         return None
 
-def updateReqText(fid, req_text):
-    r.hset(fid, "req_text", req_text)
+def updatePrompt(fid, prompt):
+    r.hset(fid, "prompt", prompt)
+
+def updatePromptResponse(fid, response):
+    r.hset(fid, "resp_text", response)
