@@ -1,0 +1,10 @@
+.sb-header{
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10vh;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

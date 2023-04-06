@@ -1,0 +1,8 @@
+{
+  "name": "spoken_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hotaplayer/spoken_bot.git",
+  "author": "arc0035 <aoronchu@gmail.com>",
+  "license": "MIT"
+}
