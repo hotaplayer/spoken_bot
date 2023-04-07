@@ -1,9 +1,9 @@
-import Admin from 'pages/Admin';
-import Home from 'pages/Home';
-import Login from 'pages/Login';
-import Test from 'pages/Test';
-import EnglishBot from 'pages/bots/EnglishBot';
-import Error from 'pages/Error';
+import Admin from '@/pages/Admin';
+import Home from '@/pages/Home';
+import Login from '@/pages/Login';
+import Test from '@/pages/Test';
+import EnglishBot from '@/pages/bots/EnglishBot';
+import Error from '@/pages/Error';
 import { createBrowserRouter } from 'react-router-dom';
 
 const routeMap = [
