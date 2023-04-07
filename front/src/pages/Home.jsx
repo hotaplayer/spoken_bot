@@ -1,14 +1,14 @@
-import {Layout} from "antd";
+import {Divider, Layout} from "antd";
 import HomeHeader from "@/components/HomeHeader";
 const { Header, Content, Footer } = Layout;
 
 export default function Home(){
     return (
-        <Layout>
+        <div>
             <HomeHeader />
-            <Content className="text-3xl font-bold underline">
+            {/* <Content >
                 mains content</Content>
-            <Footer>footer</Footer>
-        </Layout>
+            <Footer>footer</Footer> */}
+        </div>
     )
 }

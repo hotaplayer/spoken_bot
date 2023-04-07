@@ -1,4 +1,13 @@
 
 .home-header{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
 }
+
