@@ -1,5 +1,5 @@
 .admin-container {
-    border: 1px solid red;    
+    border: 1px solid #d4d4d4;    
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,26 +7,24 @@
     
 }
 
-.admin-operation {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
 
 .admin-body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border: 1px solid green;
-    flex-grow: 1
+    flex-grow: 1;
+    margin-right: 50px;
 }
 
 .admin-sidebar{
-    border: 1px solid purple;
     width: 15vw;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
 }
 
 .admin-main{
-    border: 1px solid yellow;
+    flex-grow: 1;
 }
+
+
+

@@ -5,6 +5,8 @@ import Test from '@/pages/Test';
 import EnglishBot from '@/pages/bots/EnglishBot';
 import Error from '@/pages/Error';
 import { createBrowserRouter } from 'react-router-dom';
+import TechInterviewBot from '@/pages/bots/TechInterviewBot';
+import PromoteBot from '@/pages/bots/PromoteBot';
 
 const routeMap = [
     {
@@ -25,8 +27,20 @@ const routeMap = [
         element: <Admin/>,
         children: [
             {
+                index: true,
+                element: <EnglishBot/>
+            },
+            {
                 path: 'english',
                 element: <EnglishBot/>
+            },
+            {
+                path: 'interview',
+                element: <TechInterviewBot/>
+            },
+            {
+                path: 'promote',
+                element: <PromoteBot/>
             }
         ]
     },

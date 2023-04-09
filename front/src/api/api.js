@@ -16,17 +16,43 @@ export async function readText(filename) {
 }
 
 export async function getMenuItems() {
-  return [{
-      key: 'EnglishBot',
-      label:'英语外教'
-    },
+  return [
     {
-      key: 'TechInterviewBot',
-      label:'技术面试'
-    },
-    {
-      key: 'Maintain',
-      label:'运营述职'
+      key:'1',
+      label: '情景选择',
+      children: [
+        {
+          key: '2',
+          label:'英语外教',
+          navigate: 'english',
+        },
+        {
+          key: '3',
+          label:'面试求职',
+          navigate: 'interview',
+        },
+        {
+          key: '4',
+          label:'晋升答辩',
+          navigate: 'promote'
+        }
+      ]
     }
+  ]
+}
+
+export async function loadMyChats(sceneName) {
+  return [
+    {
+      "role" : "assistant",
+      "message": "this is response",
+      "format" : "text"
+    },
+    {
+      "role" : "user",
+      "message": "0xaabb",
+      "format" : "audio"
+    },
+
   ]
 }

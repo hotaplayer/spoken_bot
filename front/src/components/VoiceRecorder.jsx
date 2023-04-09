@@ -2,13 +2,13 @@ import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import {Button, Divider, message} from 'antd';
 import {uploadWav, readText} from '../api/api';
+import {PlayCircleFilled, PauseCircleFilled} from '@ant-design/icons';
 
 export default function VoiceRecorder() {
   const [isRecording, setIsRecording] = useState(false);
-
   const [audioBlob, setAudioBlob] = useState(null);
-  const [filename, setFilename] = useState();
-  const [transcribe, setTranscribe] = useState();
+  const [sceneKey, setSceneKey] = useState();
+  
   const mediaRecorder = useRef();
 
   const handleStartRecording = async () => {
@@ -37,41 +37,28 @@ export default function VoiceRecorder() {
   const handleStopRecording = () => {
     setIsRecording(false);
     mediaRecorder.current.stop();
-  };
-
-  const handleUpload = async () => {
-    const resp = await uploadWav(audioBlob);
-    if (resp.code === 0){
-      console.log(resp.data);
-      setFilename(resp.data);
-      message.info(resp.data);
-    } else{
-      message.error(resp.message);
-    }
+    console.log('录制结束');
     setAudioBlob(undefined);
   };
 
-  const handleReadText  = async () => {
-    const resp = await readText(filename);
-    console.log(resp);
-    setTranscribe(resp.data)
-  }
+  // const handleUpload = async () => {
+  //   const resp = await uploadWav(audioBlob);
+  //   if (resp.code === 0){
+  //     console.log(resp.data);
+  //     message.info(resp.data);
+  //   } else{
+  //     message.error(resp.message);
+  //   }
+  //   setAudioBlob(undefined);
+  // };
 
   return (
-    <div style={{
-      
-    }}>
       <Button 
-      onClick={isRecording ? handleStopRecording : handleStartRecording}>
-        {isRecording ? '停止录制' : '开始录制'}
+      className='mt-2 mb-2 mr-4'
+      style={{width: '80px'}}
+      icon={isRecording? <PauseCircleFilled style={{color:'red'}}/>:<PlayCircleFilled style={{color:'green'}}/>}
+      onClick={isRecording ? handleStopRecording : handleStartRecording}
+      >
       </Button>
-      <Button onClick={handleUpload} disabled={!audioBlob}>
-        Upload Audio
-      </Button>
-      <Button onClick={handleReadText} disabled={!filename}>
-        Read Text
-      </Button>
-      {transcribe && (<div>文本:<p>{transcribe}</p></div>)}
-    </div>
   );
 }
