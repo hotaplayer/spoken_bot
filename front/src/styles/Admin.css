@@ -1,0 +1,32 @@
+.admin-container {
+    border: 1px solid red;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.admin-operation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.admin-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid green;
+    flex-grow: 1
+}
+
+.admin-sidebar{
+    border: 1px solid purple;
+    width: 15vw;
+}
+
+.admin-main{
+    border: 1px solid yellow;
+}

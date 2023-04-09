@@ -26,7 +26,14 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
   (response) => {
-    return response.data;
+    const responseData = response.data;
+    if (responseData.code !== 0){
+      message.error(`${responseData.msg}`);
+      return Promise.reject(new Error(responseData.msg));
+    } else{
+      return responseData.data;
+    }
+
   },
   (error) => {
     // 处理 HTTP 错误

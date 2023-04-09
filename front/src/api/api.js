@@ -14,3 +14,19 @@ export async function readText(filename) {
     console.log(params)
     return await instance.post('/api/text', params);
 }
+
+export async function getMenuItems() {
+  return [{
+      key: 'EnglishBot',
+      label:'英语外教'
+    },
+    {
+      key: 'TechInterviewBot',
+      label:'技术面试'
+    },
+    {
+      key: 'Maintain',
+      label:'运营述职'
+    }
+  ]
+}
