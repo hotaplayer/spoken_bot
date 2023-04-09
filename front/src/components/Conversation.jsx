@@ -6,7 +6,7 @@ import ChatMessage from "./ChatMessage";
 export default function Conversation({chats}){
     
     return (
-    <div className="ml-8 mr-8">
+    <div className="">
         
         <List
             itemLayout="horizontal"

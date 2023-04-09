@@ -10,3 +10,19 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.chat-bubble {
+    background-color: #f1f0f0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    max-width: 80%;
+    width: 50px;
+    height: 20%;
+    margin: 20px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
