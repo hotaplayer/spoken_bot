@@ -45,7 +45,7 @@ export async function loadMyChats(sceneName) {
   return [
     {
       "role" : "assistant",
-      "message": "this is response",
+      "message": "this is response from chatGPT",
       "format" : "text"
     },
     {

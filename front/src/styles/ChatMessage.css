@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+.ai-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .chat-bubble {
     background-color: #f1f0f0;
     border-radius: 20px;

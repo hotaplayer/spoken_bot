@@ -1,73 +1,70 @@
 import { Avatar ,Button} from "antd";
 import Speech from 'react-speech';
 import {PlayCircleFilled, PauseCircleFilled} from '@ant-design/icons';
+
+import { useState, useRef } from "react";
+import { useSpeechSynthesis } from 'react-speech-kit';
+
 import "@/styles/ChatMessage.css";
-import { useState } from "react";
 
 export default function ChatMessage({chat}) {
-    const component = chat.role === 'user'?(<MyMessage chat={chat}/>):(<div></div>);
-
+    const component = chat.role === 'user'?(<MyMessage chat={chat}/>):(<AIMessage chat={chat}/>);
     return component;
 }
 
 
 function MyMessage({chat}) {
     const [isPlay, setIsPlay] = useState(false);
+    const audioSource = useRef();
     const clickChat = async ()=>{
         if (isPlay){
+            setIsPlay(false);
+            audioSource.current.stop();
             return;
         }
         setIsPlay(true);
-        await playBase64Message(chat.message, ()=>{
+        audioSource.current = await playBase64Message(chat.message, ()=>{
             setIsPlay(false);
             console.log('finish playing')    
         });
     }
     return (    
     <div className="chat-box my-message">
-        <Avatar src={`https://joesch.moe/api/v1/random?key=1`} className="ml-8">
-
-        </Avatar>
+        <span  className="ml-8 font-bold ">
+            You
+        </span>
         <div className="chat-bubble" onClick={clickChat} >
-            {isPlay?<PauseCircleFilled/>:<PlayCircleFilled />}
+            {isPlay?<PauseCircleFilled style={{color:'red'}}/>:<PlayCircleFilled style={{color:'green'}}/>}
         </div>
-        {/* <Speech 
-            style={{
-                width: '100px',
-                backgroundColor: 'red',
-                border: '1px solid red'
-            }}
-            text={chat.message}
-            voice="Google UK English Female"
-        /> */}
     </div>);
 }
 
 
 function AIMessage({chat}) {
-    const isSpeechSynthesisSupported = 'speechSynthesis' in window;
-    console.log('support:'+isSpeechSynthesisSupported);
-    console.log()
-    const clickChat = ()=>{
-        playBase64Message(chat.message)
+    const [isPlay, setIsPlay] = useState(false);
+    const onEnd = () => {
+        setIsPlay(false);
+    }
+    const { speak, cancel, speaking, supported, voices } = useSpeechSynthesis({onEnd});
+    const voice = voices.filter(v=>v.lang==='en-US')[1];
+
+    const clickChat =  ()=>{
+        if (isPlay){
+            cancel();
+            setIsPlay(false);
+        } else{
+            setIsPlay(true)
+            speak({text:chat.message, voice:voice});
+        }
     }
     return (    
-    <div className="chat-box my-message">
+    <div className="chat-box ai-message">
+        <div className="chat-bubble" onClick={clickChat}>
+            {isPlay?<PauseCircleFilled style={{color:'red'}}/>:<PlayCircleFilled style={{color:'green'}}/>}
+        </div>
         <Avatar src={`https://joesch.moe/api/v1/random?key=1`} className="ml-8">
 
         </Avatar>
-        <div className="chat-bubble" onClick={clickChat}>
-            
-        </div>
-        {/* <Speech 
-            style={{
-                width: '100px',
-                backgroundColor: 'red',
-                border: '1px solid red'
-            }}
-            text={chat.message}
-            voice="Google UK English Female"
-        /> */}
     </div>);
 }
 
@@ -98,4 +95,5 @@ async function playBase64Message(message, callback){
     // Start playing the audio
     source.start();
     source.onended=callback;
+    return source;
 }

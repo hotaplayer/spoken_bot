@@ -56,9 +56,9 @@ export default function VoiceRecorder() {
       <Button 
       className='mt-2 mb-2 mr-4'
       style={{width: '80px'}}
-      icon={isRecording? <PauseCircleFilled style={{color:'red'}}/>:<PlayCircleFilled style={{color:'green'}}/>}
       onClick={isRecording ? handleStopRecording : handleStartRecording}
       >
+        {isRecording?'停止录制':'开始录制'}
       </Button>
   );
 }
