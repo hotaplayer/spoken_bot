@@ -46,7 +46,7 @@ function AIMessage({chat}) {
         setIsPlay(false);
     }
     const { speak, cancel, speaking, supported, voices } = useSpeechSynthesis({onEnd});
-    const voice = voices.filter(v=>v.lang==='en-US')[1];
+    const voice = voices.filter(v=>v.lang==='en-US')[4];
 
     const clickChat =  ()=>{
         if (isPlay){

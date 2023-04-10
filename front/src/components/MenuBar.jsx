@@ -20,14 +20,21 @@ export default function MenuBar(){
         <Menu id='admin-menu'
         mode="inline" 
         items={menuItems}
-        defaultOpenKeys={'1'}
-        defaultSelectedKeys={'2'}
+        defaultOpenKeys={['1']}
+        defaultSelectedKeys={['2']}
         onSelect={(key)=>{onSelect(key.key, menuItems, navigate)}}
+        onOpenChange={()=>{
+            console.log('on open change')
+        }}
+        onClick={()=>{
+            console.log('onclick')
+        }}
         />
     )
 }
 
 async function onSelect(key, menuItems, navigate){
+
     const menuItem = find(menuItems, key);
     if (menuItem){
         navigate(menuItem.navigate);
