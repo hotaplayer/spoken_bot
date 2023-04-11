@@ -1,7 +1,10 @@
-from snowflake import SnowflakeGenerator
+import base64
 
-gen = SnowflakeGenerator(0)
-print(next(gen))
+with open('ui.wav', 'rb') as f:
+    file_content = f.read()
+    encoded_content = base64.b64encode(file_content).decode('utf-8')
+    print(encoded_content)
+
 #
 # openai.api_key = config.get("openai_api_key")
 #
