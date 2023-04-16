@@ -57,3 +57,9 @@ export async function loadMyChats(sceneName) {
 
   ]
 }
+
+export async function test() {
+  const formData = new FormData();
+  formData.append('username','zhangsan');
+  return await instance.put('/api/test/post', formData);
+}
