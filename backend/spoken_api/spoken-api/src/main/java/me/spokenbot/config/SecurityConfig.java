@@ -39,11 +39,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
+                .cors().configurationSource(corsConfiguration())
+                .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
                 .headers().frameOptions().disable() // disable X-Frame-Options header
                 .and()
-                .authorizeRequests().anyRequest().permitAll()
-                .and()
-                .cors().configurationSource(corsConfiguration());
+                .authorizeRequests().anyRequest().permitAll();
 //        http
 //                .csrf().disable()
 //                .cors()
