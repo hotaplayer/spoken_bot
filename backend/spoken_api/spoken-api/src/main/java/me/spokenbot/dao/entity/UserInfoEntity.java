@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper=false)
 public class UserInfoEntity extends CommonEntity{
+    private long id;
 
     private String username;
 
