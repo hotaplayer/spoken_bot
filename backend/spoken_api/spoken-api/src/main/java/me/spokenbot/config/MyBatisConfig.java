@@ -17,6 +17,14 @@ public class MyBatisConfig {
    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
       SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
       sessionFactory.setDataSource(dataSource);
+
+
+      org.apache.ibatis.session.Configuration ibatisConfig = new org.apache.ibatis.session.Configuration();
+      // Set the mapUnderscoreToCamelCase property to true
+      ibatisConfig.setMapUnderscoreToCamelCase(true);
+      // Set the configuration on the SqlSessionFactoryBean
+      sessionFactory.setConfiguration(ibatisConfig);
+
       return sessionFactory.getObject();
    }
 

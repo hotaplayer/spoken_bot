@@ -21,4 +21,12 @@ public class CommonResponse<T> {
         return new CommonResponse<>(successCodeEnum.getCode(), successCodeEnum.getMessage(), object);
     }
 
+    public static CommonResponse with(CodeEnums codeEnums){
+        return new CommonResponse(codeEnums.getCode(), codeEnums.getMessage(), null);
+    }
+
+    public static CommonResponse fail(Throwable throwable){
+        return new CommonResponse(CodeEnums.REQUEST_ERROR.getCode(), throwable.getMessage(), null);
+    }
+
 }

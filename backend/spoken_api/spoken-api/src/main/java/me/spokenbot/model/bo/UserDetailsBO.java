@@ -10,9 +10,9 @@ public class UserDetailsBO implements UserDetails {
     private String username;
     private String password;
 
-    public UserDetailsBO(String username, String password){
-        this.username = username;
-        this.password = password;
+    public UserDetailsBO(UserInfoBO userInfoBO){
+        this.username = userInfoBO.getUsername();
+        this.password = userInfoBO.getPwdHash();
     }
 
     @Override

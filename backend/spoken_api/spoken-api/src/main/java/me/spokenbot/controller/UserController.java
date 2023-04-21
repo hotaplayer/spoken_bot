@@ -16,10 +16,9 @@ public class UserController {
     @PostMapping("login")
     public ResponseEntity login(
             @RequestParam("username") String username,
-            @RequestParam("password") String password){
-        //认证完成后，如何实现对应的token生成、token存储等功能呢？
-
-        return ResponseEntity.ok().body(username);
+            @RequestParam("password") String password) throws Exception{
+        CommonResponse response = userService.login(username, password);
+        return ResponseEntity.ok().body(response);
     }
 
     @PostMapping("register")
@@ -27,8 +26,8 @@ public class UserController {
             @RequestParam("username") String username,
             @RequestParam("password") String password
     ) throws Exception{
-        userService.register(username, password);
-        return ResponseEntity.ok().body(CommonResponse.success(null));
+        CommonResponse response = userService.register(username, password);
+        return ResponseEntity.ok().body(response);
     }
 
 }
