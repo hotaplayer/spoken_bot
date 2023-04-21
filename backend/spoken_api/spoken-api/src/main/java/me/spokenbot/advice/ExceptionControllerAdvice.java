@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 @Slf4j
 public class ExceptionControllerAdvice {
 
-
     @ExceptionHandler(SpokenBotException.class)
     public CommonResponse handleSpokenBotException(HttpServletRequest req, SpokenBotException e) {
         CodeEnums codeEnums = e.getCodeEnums();
@@ -35,6 +34,10 @@ public class ExceptionControllerAdvice {
         return new CommonResponse(CodeEnums.AUTH_FAILED.getCode(), e.getMessage(), null);
     }
 
-
+    @ExceptionHandler(Exception.class)
+    public CommonResponse handleAuthenticationException(HttpServletRequest req, Exception e) {
+        log.error("Exception ",e);
+        return new CommonResponse(CodeEnums.REQUEST_ERROR.getCode(), e.getMessage(), null);
+    }
 
 }
