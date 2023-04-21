@@ -3,7 +3,7 @@ package me.spokenbot.model.response;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import me.spokenbot.errors.CodeEnums;
+import me.spokenbot.enums.CodeEnums;
 
 @Data
 @NoArgsConstructor

@@ -2,6 +2,7 @@ package me.spokenbot.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -11,19 +12,28 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.RememberMeServices;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices;
+import org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.UUID;
 
 @Configuration
 @EnableWebSecurity
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -43,6 +53,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .rememberMe()//开启RememberMeFilter
+                .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
+                .tokenValiditySeconds(7200)
                 .and()
                 .headers().frameOptions().disable() // disable X-Frame-Options header
                 .and()
@@ -69,7 +83,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    CorsConfigurationSource corsConfiguration (){
+    private CorsConfigurationSource corsConfiguration (){
         // Cors配置类
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowCredentials(false); // 是否返回时生成凭证
@@ -84,5 +98,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         source.registerCorsConfiguration("/**",corsConfiguration);
 
         return source;
+    }
+
+
+    @Bean
+    AbstractRememberMeServices rememberMeServices(UserDetailsService userDetailsService) {
+        //token不存储，token由username、过期信息+签名构成，其中签名由key和username，pwd等哈希构成。
+        TokenBasedRememberMeServices services =  new TokenBasedRememberMeServices(UUID.randomUUID().toString(), userDetailsService);
+        services.setAlwaysRemember(true);
+        return services;
     }
 }

@@ -1,11 +1,12 @@
-package me.spokenbot.errors;
+package me.spokenbot.enums;
 
 import lombok.Getter;
 
 @Getter
 public enum CodeEnums {
 
-    SUCCESS("0", null);
+    SUCCESS("0", null),
+    USER_NOT_FOUND("10001", "User Not Found");
 
     private String code;
     private String message;

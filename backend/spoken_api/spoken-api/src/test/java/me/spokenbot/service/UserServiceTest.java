@@ -13,8 +13,12 @@ public class UserServiceTest extends ServerApplicationTests {
 
     @Test
     public void test() throws Exception{
-        userService.register("test","pwd");
-        
+        userService.register("aaa","aaa");
+        //验证rememberMe功能是否成功
+        //获取一个RememberMeService，它是什么时候注入的？
+        //RememberMeService里用的非持久化类型的token，由用户名+签名构成。签名的密码是加强密码吗？
+        //返回正常数据后，还要返回setCookie
+
     }
 
 }
