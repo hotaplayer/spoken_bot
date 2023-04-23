@@ -7,6 +7,7 @@ import Error from '@/pages/Error';
 import { createBrowserRouter } from 'react-router-dom';
 import TechInterviewBot from '@/pages/bots/TechInterviewBot';
 import PromoteBot from '@/pages/bots/PromoteBot';
+import Register from '@/pages/Register';
 
 const routeMap = [
     {
@@ -21,6 +22,10 @@ const routeMap = [
     {
         path:'/login',
         element: <Login/>
+    },
+    {
+        path: '/register',
+        element: <Register/>
     },
     {
         path:'/admin',

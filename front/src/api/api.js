@@ -1,5 +1,12 @@
 import {instance} from './axios_http';
 
+export async function register(username, password){
+  const formData = new FormData();
+  formData.append('username', username);
+  formData.append('password', password);
+
+  return await instance.post('/api/user/register', formData);
+}
 
 export async function uploadWav(audioBlob) {
     const formData = new FormData();
@@ -63,3 +70,4 @@ export async function test() {
   formData.append('username','zhangsan');
   return await instance.put('/api/test/post', formData);
 }
+

@@ -4,6 +4,7 @@ import { useForm
  } from "antd/es/form/Form";
 import { useNavigate } from "react-router-dom";
 import Cookies from 'js-cookie';
+import HomeHeader from "@/components/HomeHeader";
 
 export default function Login(){
 
@@ -15,15 +16,15 @@ export default function Login(){
     }
     return (<div id="login-bg">
         <div id="login-container"
-        >
+        >   
             <h1>欢迎登入SpokenBot</h1>
-            <Form id="login-form" 
+            <Form
                 onFinish={onFinish}>
-                <Form.Item required className="w-full" name="username">
-                    <Input type="text" placeholder="Username"  size="large"></Input>
+                <Form.Item required className="w-full" name="username" > 
+                    <Input type="text" placeholder="Username" ></Input>
                 </Form.Item>
                 <Form.Item required className="w-full" name="password">
-                    <Input type="password" placeholder="Password" size="large" ></Input>
+                    <Input type="password" placeholder="Password" ></Input>
                 </Form.Item>
                 <Form.Item className="self-end" >
                     <a className="text-black underline">Forgot Password?</a>
@@ -34,7 +35,7 @@ export default function Login(){
                 
                 <Form.Item  className="self-end ">
                     Not register?  
-                        <a className="ml-4 underline text-black" >Register Now!</a>
+                        <a className="ml-4 underline text-black" href="/register" >Register Now!</a>
                 </Form.Item>
 
             </Form>

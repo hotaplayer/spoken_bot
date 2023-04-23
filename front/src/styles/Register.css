@@ -1,0 +1,20 @@
+#register-container {
+    position: relative;
+    top: 10vh;
+    width: 50%;
+    margin:0 auto;
+
+}
+
+#register-container h1{
+    text-align: center;
+}
+
+#register-container form{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
