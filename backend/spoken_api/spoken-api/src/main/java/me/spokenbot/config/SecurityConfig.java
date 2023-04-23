@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.security.web.authentication.RememberMeServices;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -31,55 +32,29 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests()
-                .antMatchers("api/user/login")
-                .anonymous()
+        http.csrf().disable().
+                authorizeRequests()
+                .antMatchers("/api/user/**")
+                .permitAll()
                 .anyRequest()
                 .authenticated()
+                .and()
+                .cors().configurationSource(corsConfiguration())
+                .and()
+                .rememberMe()
+                .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
+                .tokenValiditySeconds(-1)
                 .and()
                 .exceptionHandling()
                 .authenticationEntryPoint(new CustomAuthenticationHandler())
                 .accessDeniedHandler(new CustomAccessDeniedHandler());
-//        http
-//                .csrf().disable()
-//                .cors().configurationSource(corsConfiguration())
-//                .and()
-//                .sessionManagement()
-//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-//                .and()
-//                .rememberMe()//开启RememberMeFilter
-//                .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
-//                .tokenValiditySeconds(-1)
-//                .and()
-//                .headers().frameOptions().disable() // disable X-Frame-Options header
-//                .and()
-//                .authorizeRequests().anyRequest().permitAll();
-//        http
-//                .csrf().disable()
-//                .cors()
-//                .and()
-//                .sessionManagement()
-//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-//                .and()
-//                .authorizeRequests()
-//                .antMatchers(authConfig.getPermitAllApiList().toArray(new String[0])).permitAll()
-//                .antMatchers(authConfig.getAnonymousApi()).anonymous()
-//                .antMatchers(authConfig.getRoleAuth().getAdminAuth().toArray(new String[0])).hasAnyAuthority(AccountType.ADMIN.getRoleName())
-//                .antMatchers(authConfig.getRoleAuth().getCompanyAuth().toArray(new String[0])).hasAnyAuthority(AccountType.COMPANY.getRoleName())
-//                // .antMatchers(authConfig.getRoleAuth().getWitnessAuth().stream().toArray(String[]::new)).hasAnyAuthority(AccountType.WITNESS.getRoleName())
-//                .anyRequest().authenticated()
-//                .and()
-//                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-//                .exceptionHandling()
-//                .authenticationEntryPoint(authenticationEntryPointHandler)  // 认证失败异常处理配置
-//                .accessDeniedHandler(accessDeniedHandlerHandler);  // 授权失败异常处理配置
     }
 
 
     private CorsConfigurationSource corsConfiguration (){
         // Cors配置类
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowCredentials(false); // 是否返回时生成凭证
+        corsConfiguration.setAllowCredentials(true);
         corsConfiguration.setAllowedHeaders(Arrays.asList("*")); // 允许请求携带哪些请求头信息
         corsConfiguration.setAllowedMethods(Arrays.asList("*")); // 允许哪些类型的请求方法
         corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:3000")); // 允许哪些域可以进行方法

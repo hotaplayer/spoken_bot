@@ -12,6 +12,8 @@ public enum CodeEnums {
 
     AUTHORIZE_FAILED("10004", "User authorize failed"),
 
+    DUPLICATE_USER("10005", "Duplicate user"),
+
     REQUEST_ERROR("99999", "Request failed");
     private String code;
     private String message;
