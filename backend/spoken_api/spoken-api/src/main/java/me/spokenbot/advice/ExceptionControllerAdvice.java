@@ -28,22 +28,23 @@ public class ExceptionControllerAdvice {
         return CommonResponse.with(codeEnums);
     }
 
-//    @ExceptionHandler(AuthenticationException.class)
-//    public CommonResponse handleAuthenticationException(HttpServletRequest req, AuthenticationException e) {
-//        log.error("AuthenticationException ",e);
-//        if (e instanceof UsernameNotFoundException) {
-//            return CommonResponse.with(CodeEnums.USER_NOT_FOUND);
-//        }
-//        if (e instanceof BadCredentialsException){
-//            return CommonResponse.with(CodeEnums.INVALID_PASSWORD);
-//        }
-//        return new CommonResponse(CodeEnums.AUTHENTICATE_FAILED.getCode(), e.getMessage(), null);
-//    }
+    @ExceptionHandler(AuthenticationException.class)
+    @ResponseBody
+    public CommonResponse handleAuthenticationException(HttpServletRequest req, AuthenticationException e) {
+        log.error("AuthenticationException ",e);
+        if (e instanceof UsernameNotFoundException) {
+            return CommonResponse.with(CodeEnums.USER_NOT_FOUND);
+        }
+        if (e instanceof BadCredentialsException){
+            return CommonResponse.with(CodeEnums.INVALID_PASSWORD);
+        }
+        return new CommonResponse(CodeEnums.AUTHENTICATE_FAILED.getCode(), e.getMessage(), null);
+    }
 
 
     @ExceptionHandler(DuplicateKeyException.class)
     @ResponseBody//必须加，不然render会报错
-    public CommonResponse handleDupplicateException(HttpServletRequest req, DuplicateKeyException e) {
+    public CommonResponse handleDuplicateException(HttpServletRequest req, DuplicateKeyException e) {
         log.error("SQLIntegrityConstraintViolationException ",e);
         return new CommonResponse(CodeEnums.DUPLICATE_USER.getCode(),CodeEnums.DUPLICATE_USER.getMessage(), null);
     }

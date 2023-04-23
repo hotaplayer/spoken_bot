@@ -43,7 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .rememberMe()
                 .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
-                .tokenValiditySeconds(-1)
+                .tokenValiditySeconds(-1)//默认两周
                 .and()
                 .exceptionHandling()
                 .authenticationEntryPoint(new CustomAuthenticationHandler())
@@ -54,7 +54,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private CorsConfigurationSource corsConfiguration (){
         // Cors配置类
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowCredentials(true);
+        corsConfiguration.setAllowCredentials(true);//允许跨域携带cookie
         corsConfiguration.setAllowedHeaders(Arrays.asList("*")); // 允许请求携带哪些请求头信息
         corsConfiguration.setAllowedMethods(Arrays.asList("*")); // 允许哪些类型的请求方法
         corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:3000")); // 允许哪些域可以进行方法
