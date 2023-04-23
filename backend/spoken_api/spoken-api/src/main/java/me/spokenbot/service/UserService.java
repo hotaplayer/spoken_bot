@@ -62,22 +62,11 @@ public class UserService {
     }
 
     public CommonResponse login(String username, String password) throws Exception{
-        //1. 进行认证
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-        if (!authentication.isAuthenticated()){
-            throw new SpokenBotException(CodeEnums.AUTH_FAILED);
-        }
+        //1. 验证
+        Authentication auth = new UsernamePasswordAuthenticationToken(username, password);
+        auth = authenticationManager.authenticate(auth);
         //2. 记住我
-        this.rememberMeServices.loginSuccess(httpContextManager.currentRequest(), httpContextManager.currentResponse(), authentication);
+        rememberMeServices.loginSuccess(httpContextManager.currentRequest(), httpContextManager.currentResponse(), auth);
         return CommonResponse.success(null);
-    }
-
-    //登陆成功后，调用rememberMeService，创建token、返回cookie
-    public UserInfoBO getUserInfoByName(String username) throws UsernameNotFoundException {
-        UserInfoBO userInfoBO = userManager.loadUserInfoByName(username);
-        if (userInfoBO == null){
-            throw new UsernameNotFoundException("Username for found:"+username);
-        }
-        return userInfoBO;
     }
 }

@@ -31,7 +31,7 @@ public class ExceptionControllerAdvice {
         if (e instanceof BadCredentialsException){
             return CommonResponse.with(CodeEnums.INVALID_PASSWORD);
         }
-        return new CommonResponse(CodeEnums.AUTH_FAILED.getCode(), e.getMessage(), null);
+        return new CommonResponse(CodeEnums.AUTHENTICATE_FAILED.getCode(), e.getMessage(), null);
     }
 
     @ExceptionHandler(Exception.class)

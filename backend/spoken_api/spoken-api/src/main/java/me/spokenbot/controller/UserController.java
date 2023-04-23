@@ -13,14 +13,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("login")
-    public ResponseEntity login(
-            @RequestParam("username") String username,
-            @RequestParam("password") String password) throws Exception{
-        CommonResponse response = userService.login(username, password);
-        return ResponseEntity.ok().body(response);
-    }
-
     @PostMapping("register")
     public ResponseEntity<CommonResponse> register(
             @RequestParam("username") String username,
@@ -29,5 +21,17 @@ public class UserController {
         CommonResponse response = userService.register(username, password);
         return ResponseEntity.ok().body(response);
     }
+
+    @PostMapping("login")
+    public ResponseEntity<CommonResponse> login(
+            @RequestParam("username") String username,
+            @RequestParam("password") String password
+    ) throws Exception{
+        CommonResponse response = userService.login(username, password);
+        return ResponseEntity.ok().body(response);
+    }
+
+
+
 
 }

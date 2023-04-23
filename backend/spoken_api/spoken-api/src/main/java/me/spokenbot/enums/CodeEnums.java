@@ -8,7 +8,9 @@ public enum CodeEnums {
     SUCCESS("0", null),
     USER_NOT_FOUND("10001", "User Not Found"),
     INVALID_PASSWORD("10002", "Invalid Password"),
-    AUTH_FAILED("10003", "User auth failed"),
+    AUTHENTICATE_FAILED("10003", "User authentication failed"),
+
+    AUTHORIZE_FAILED("10004", "User authorize failed"),
 
     REQUEST_ERROR("99999", "Request failed");
     private String code;

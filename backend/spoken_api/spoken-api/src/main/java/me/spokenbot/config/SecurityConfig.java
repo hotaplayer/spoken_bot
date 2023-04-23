@@ -1,66 +1,59 @@
 package me.spokenbot.config;
 
 
+import me.spokenbot.handler.CustomAccessDeniedHandler;
+import me.spokenbot.handler.CustomAuthenticationHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.authentication.RememberMeServices;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices;
-import org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.UUID;
 
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private ApplicationContext applicationContext;
 
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-//    @Bean
-//    @Override
-//    public AuthenticationManager authenticationManagerBean() throws Exception {
-//        return super.authenticationManagerBean();
-//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .cors().configurationSource(corsConfiguration())
+
+        http.authorizeRequests()
+                .antMatchers("api/user/login")
+                .anonymous()
+                .anyRequest()
+                .authenticated()
                 .and()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .rememberMe()//开启RememberMeFilter
-                .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
-                .tokenValiditySeconds(7200)
-                .and()
-                .headers().frameOptions().disable() // disable X-Frame-Options header
-                .and()
-                .authorizeRequests().anyRequest().permitAll();
+                .exceptionHandling()
+                .authenticationEntryPoint(new CustomAuthenticationHandler())
+                .accessDeniedHandler(new CustomAccessDeniedHandler());
+//        http
+//                .csrf().disable()
+//                .cors().configurationSource(corsConfiguration())
+//                .and()
+//                .sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+//                .and()
+//                .rememberMe()//开启RememberMeFilter
+//                .rememberMeServices(applicationContext.getBean(RememberMeServices.class))
+//                .tokenValiditySeconds(-1)
+//                .and()
+//                .headers().frameOptions().disable() // disable X-Frame-Options header
+//                .and()
+//                .authorizeRequests().anyRequest().permitAll();
 //        http
 //                .csrf().disable()
 //                .cors()
@@ -101,11 +94,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    @Bean
-    AbstractRememberMeServices rememberMeServices(UserDetailsService userDetailsService) {
-        //token不存储，token由username、过期信息+签名构成，其中签名由key和username，pwd等哈希构成。
-        TokenBasedRememberMeServices services =  new TokenBasedRememberMeServices(UUID.randomUUID().toString(), userDetailsService);
-        services.setAlwaysRemember(true);
-        return services;
-    }
+
 }
