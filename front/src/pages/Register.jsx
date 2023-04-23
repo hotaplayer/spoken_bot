@@ -6,9 +6,8 @@ import { register } from "@/api/api";
 export default function Register() {
 
     const onFinish = async (values)=>{
-        console.log(values)
         const result = await register(values.username, values.password)
-        console.log(result)
+        
     }
 
     return (<div>

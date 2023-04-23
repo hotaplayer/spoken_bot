@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82cdf4f8-1fc7-4a0e-9d86-a5eed2189567" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/spokenbot/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/spokenbot/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/spokenbot/SpokenBotApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/spokenbot/SpokenBotApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/spokenbot/controller/PromptController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/spokenbot/SpokenBotApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/spokenbot/SpokenBotApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/spokenbot/controller/ConversationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/spokenbot/controller/ConversationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/spokenbot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/spokenbot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../front/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../front/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../front/src/api/axios_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../front/src/api/axios_http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../front/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../front/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../front/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../front/src/pages/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -45,6 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,7 +64,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.5.9/f1f73896d2fdcaa2fb8b2f75c2505c26f06da56a/mybatis-3.5.9-sources.jar!/org/apache/ibatis/annotations/Mapper.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.4/f6075f8ec7884b5c172beef6dc3554f607cc65a/spring-security-config-5.7.4-sources.jar!/org/springframework/security/config/annotation/web/HttpSecurityBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.4/f6075f8ec7884b5c172beef6dc3554f607cc65a/spring-security-config-5.7.4-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.4/f6075f8ec7884b5c172beef6dc3554f607cc65a/spring-security-config-5.7.4-sources.jar!/org/springframework/security/config/annotation/web/configurers/CsrfConfigurer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.4/f6075f8ec7884b5c172beef6dc3554f607cc65a/spring-security-config-5.7.4-sources.jar!/org/springframework/security/config/annotation/web/configurers/RememberMeConfigurer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/authentication/RememberMeAuthenticationToken.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/core/session/SessionRegistry.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/core/session/SessionRegistryImpl.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/expression/WebExpressionVoter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/RememberMeServices.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenBasedRememberMeServices.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/session/RegisterSessionAuthenticationStrategy.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/session/SessionAuthenticationStrategy.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/session/SessionManagementFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.23/53c552e0d614973c51ae6660caddf19ae30868cf/spring-tx-5.3.23-sources.jar!/org/springframework/dao/DataIntegrityViolationException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.23/d77b6c649df29dbc7cb5ced14eed149c82026168/spring-webmvc-5.3.23-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,10 +101,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chubingnan/Dev/github/hotaplayer/spoken_bot/backend/spoken_api/spoken-api&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chubingnan/Dev/github/hotaplayer/spoken_bot/backend/spoken_api/spoken-api&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SpokenBotApiApplication">
     <configuration name="SpokenBotApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.spokenbot.SpokenBotApiApplication" />
       <module name="spoken-api.main" />
@@ -85,8 +122,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.spokenbot.service.UserServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.spokenbot.service.UserServiceTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserServiceTest.test" />
+        <item itemvalue="Gradle.UserServiceTest" />
         <item itemvalue="Application.SpokenBotApiApplication" />
       </list>
     </recent_temporary>
@@ -112,5 +197,275 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/manager/impl/DefaultUserManager.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.4/f6075f8ec7884b5c172beef6dc3554f607cc65a/spring-security-config-5.7.4-sources.jar!/org/springframework/security/config/annotation/web/configurers/RememberMeConfigurer.java</url>
+          <line>347</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/manager/UsernamePwdAuthenticateManager.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/ui/DefaultLoginPageGeneratingFilter.java</url>
+          <line>236</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.4/5ab75dfc598f8f2aa0968e3a7af696b49d072637/spring-security-core-5.7.4-sources.jar!/org/springframework/security/access/vote/AffirmativeBased.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/www/BasicAuthenticationFilter.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>222</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>261</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/ui/DefaultLoginPageGeneratingFilter.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationEntryPoint.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationEntryPoint.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/handler/CustomAuthenticationHandler.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/handler/CustomAccessDeniedHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/advice/ExceptionControllerAdvice.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/spokenbot/advice/ExceptionControllerAdvice.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.4/ddbd2d5b3aba7104046eb8a559f9440ce94f083e/spring-security-web-5.7.4-sources.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.java</url>
+          <line>289</line>
+          <properties class="org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices" method="onLoginSuccess">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

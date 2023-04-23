@@ -3,7 +3,7 @@ import { message } from "antd";
 
 export const instance = axios.create({
   baseURL: process.env.REACT_APP_API,
-  timeout: 50000, // Set timeout to 5 seconds
+  timeout: 50000, // Set timeout to 50 seconds
   withCredentials: true
 });
 

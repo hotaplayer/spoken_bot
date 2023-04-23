@@ -8,6 +8,15 @@ export async function register(username, password){
   return await instance.post('/api/user/register', formData);
 }
 
+export async function login(username, password){
+  const formData = new FormData();
+  formData.append('username', username);
+  formData.append('password', password);
+
+  return await instance.post('/api/user/login', formData);
+}
+
+
 export async function uploadWav(audioBlob) {
     const formData = new FormData();
     formData.append('audio', audioBlob, 'audio.wav');
